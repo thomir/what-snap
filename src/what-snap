@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -s https://assertions.ubuntu.com/v1/assertions/snap-declaration/16/$1 | jq .headers.\"snap-name\"

@@ -1,0 +1,21 @@
+name: what-snap
+version: '1.0'
+summary: Turn a snap id into a snap name.
+description: |
+  Turn a snap id into a snap name. Useful for developers interacting with the
+  store APIs.
+grade: stable
+confinement: strict
+
+apps:
+  what-snap:
+    command: usr/bin/what-snap
+    plugs: [network]
+
+parts:
+  what-snap:
+    plugin: copy
+    files:
+      what-snap: usr/bin/what-snap
+    source: src/
+    stage-packages: [curl, jq]
