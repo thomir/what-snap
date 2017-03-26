@@ -16,3 +16,4 @@ parts:
   what-snap:
     plugin: rust
     source: .
+    stage-packages: [libssl-dev]
