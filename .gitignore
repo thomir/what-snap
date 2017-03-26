@@ -1,0 +1,7 @@
+Cargo.lock
+lxc-container-name
+/parts/
+/prime/
+/stage/
+/target/
+/*.snap

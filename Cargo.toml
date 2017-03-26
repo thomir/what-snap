@@ -1,0 +1,14 @@
+[package]
+
+name = "what-snap"
+version = "0.0.1"
+authors = [ "Thomi Richards <thomir@gmail.com>" ]
+
+
+[dependencies]
+
+argparse = "0.2.1"
+hyper = "0.9.13"
+url = "1.2.3"
+serde_json = "*"
+xdg = "2.0.0"

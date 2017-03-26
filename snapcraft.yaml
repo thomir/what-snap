@@ -9,13 +9,10 @@ confinement: strict
 
 apps:
   what-snap:
-    command: usr/bin/what-snap
+    command: bin/what-snap
     plugs: [network]
 
 parts:
   what-snap:
-    plugin: copy
-    files:
-      what-snap: usr/bin/what-snap
-    source: src/
-    stage-packages: [curl, jq]
+    plugin: rust
+    source: .
