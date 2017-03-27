@@ -16,4 +16,5 @@ parts:
   what-snap:
     plugin: rust
     source: .
-    stage-packages: [libssl-dev]
+    build-packages: [libssl-dev, libcrypto++9v5]
+    stage-packages: [libssl1.0.0]
